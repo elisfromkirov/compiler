@@ -9,22 +9,22 @@
 
 namespace compiler {
 
-class UnsupportedCharacter : public std::exception {
+class UnsupportedCharacter final : public std::exception {
  public:
   const char* what() const noexcept override;
 };
 
-class IllFormedCharacterLiteral : public std::exception {
+class IllFormedCharacterLiteral final : public std::exception {
  public:
   const char* what() const noexcept override;
 };
 
-class IllFormedNumericLiteral : public std::exception {
+class IllFormedNumericLiteral final : public std::exception {
  public:
   const char* what() const noexcept override;
 };
 
-class IllFormedStringLiteral : public std::exception {
+class IllFormedStringLiteral final : public std::exception {
  public:
   const char* what() const noexcept override;
 };

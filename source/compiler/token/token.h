@@ -121,7 +121,7 @@ struct Identifier {
   std::string value;
 };
 
-class Token {
+class Token final {
  public:
   static Token FromCompilationUnitEnd();
 

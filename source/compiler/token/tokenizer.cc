@@ -218,14 +218,14 @@ Token Tokenizer::ParseControl() {
       switch (reader_.Peek()) {
         case '|': {
           reader_.Advance();
-          return Token::FromControl(kAmpersandAmpersand);
+          return Token::FromControl(kPipePipe);
         }
         case '=': {
           reader_.Advance();
-          return Token::FromControl(kAmpersandEqual);
+          return Token::FromControl(kPipeEqual);
         }
         default: {
-          return Token::FromControl(kAmpersand);
+          return Token::FromControl(kPipe);
         }
       }
     }

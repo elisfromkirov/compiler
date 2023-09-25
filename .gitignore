@@ -20,4 +20,4 @@ build/
 .DS_Stores
 
 # Final executable
-compiler
+./compiler

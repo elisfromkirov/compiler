@@ -1,0 +1,23 @@
+# clangd cache directory
+.cache/
+
+# CLion cache directory
+.idea/
+
+# vs code cache directory
+.vscode/
+
+# CLion CMake build directory
+cmake-build-*/
+
+# vs code CMake build directory
+build/
+
+# clangd configuration file
+.clangd
+
+# MacOS specific files
+.DS_Stores
+
+# Final executable
+compiler
